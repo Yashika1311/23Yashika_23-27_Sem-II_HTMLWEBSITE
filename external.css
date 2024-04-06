@@ -1,0 +1,234 @@
+
+.flex-container
+{
+    background-color:rgb(226, 80, 112) ;
+   
+}
+.flex-item
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    color: aliceblue;
+}
+.slideshow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    position: relative;
+    margin: auto;
+    
+}
+
+.slideshow-image {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;   
+}
+
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s ease-in-out 2s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.flex-container2{
+    display:-webkit-flex;
+    display:flex;
+    -webkit-justify-content:space-between;
+    justify-content: space-between;  
+}
+
+/* CSS for the two new images */
+.flex-container3 {
+    display: flex;
+    justify-content: space-around;
+     /* Adjust as needed */
+     width:100%;
+}
+
+.flexitem8,
+.flexitem9 {
+    flex: 1;
+}
+
+.flexitem8 img,
+.flexitem9 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer; /* Set cursor to pointer */
+}
+
+/* CSS for the slideshow container */
+
+.slideshow-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.slideshow-buttons button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: circle-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.slideshow-buttons button:hover {
+    box-shadow: 0 0 10px rgba(255, 0, 100, 0.7); /* Add shadow on hover */
+}
+.box-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: 6px;
+   
+   
+  }
+  
+  .box-logo{
+    text-align: left;
+    size: 3px;
+    
+  }
+  
+  .box {
+    background-color: rgb(246, 236, 238);
+    border: none;
+    color: rgb(8, 8, 8);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    width:280px;
+    height:45px;
+    flex: 1;
+    margin: 10px;
+    border-radius:5px; /* Adjust this value as needed */
+    overflow: hidden; /* Ensure that the content inside the box doesn't overflow the curve */
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+  .box img{
+    width: 50px;
+    vertical-align: center;
+    margin-top:-3px;
+    
+  }
+  .box p{
+    color:black;
+    margin-top: -37px;
+    
+    
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    padding: 10px;
+    border: 1px solid rgb(226, 80, 112);
+    border-radius: 5px;
+    margin-right: 10px;
+    width:400px;
+}
+.box-container {
+    background-color: rgb(246, 219, 224); /* Baby pink color */
+    width: 97.5%;
+    height: 100%; /* Adjust the height as needed */
+    padding: 20px; /* Optional: Add padding for spacing inside the container */
+    position: relative;
+    width: 100%;
+    
+}
+.content{
+    position: absolute;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+}
+.fixed-text {
+    color: rgb(249, 109, 139);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2rem;
+            white-space: nowrap; /* Prevents line break */
+            position: fixed;
+}
+.marquee-container {
+    
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.marquee {
+    display: flex;
+    animation: marquee-scroll 20s linear infinite;
+}
+
+.row {
+    display: flex;
+}
+
+.row img {
+    margin-right: 30px; /* Adjust the spacing between images */
+    width: 200px; /* Adjust the width of the images */
+    height: 200px;
+    border-radius:7px;
+}
+.row1 {
+    display: flex;
+}
+
+.row1 img {
+    margin-right: 30px; /* Adjust the spacing between images */
+    width: 200px; /* Adjust the width of the images */
+    height: 200px;
+    border-radius:7px;
+}
+
+/* Animation keyframes */
+@keyframes marquee-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+.row2 img{
+    margin-right: 30px; /* Adjust the spacing between images */
+    width: 180px; /* Adjust the width of the images */
+    height: 180px;
+    border-radius:7px;
+    
+
+}
